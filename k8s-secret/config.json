@@ -1,0 +1,13 @@
+{
+  "auths": {
+    "docker-s.nexus.smart.com": {
+      "auth": "YWRtaW46YXBwx"
+    },
+	"docker-r.nexus.smart.com": {
+      "auth": "YWRtaW46YXBwx"
+    },
+	"docker-p.nexus.smart.com": {
+      "auth": "YWRtaW46YXBwx"
+    }
+  }
+}

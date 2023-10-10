@@ -1,0 +1,1 @@
+kubectl create secret generic regcred -n devops-tools --from-file=.dockerconfigjson=c:\temp\config.json --type=kubernetes.io/dockerconfigjson
