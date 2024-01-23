@@ -12,6 +12,7 @@ spec:
     - "docker-s.nexus.smart.com"
     - "docker-r.nexus.smart.com"
     - "docker-p.nexus.smart.com"
+    - "docker-g.nexus.smart.com"
   containers:
   - name: kaniko
     image: gcr.io/kaniko-project/executor:debug
