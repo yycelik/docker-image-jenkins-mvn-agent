@@ -7,7 +7,7 @@ spec:
   - ip: "192.168.0.200"
     hostnames:
     - "jenkins.smart.com"
-    - "tunnel.jenkins.smart.com"
+    - "agent.jenkins.smart.com"
     - "nexus.smart.com"
     - "docker-s.nexus.smart.com"
     - "docker-r.nexus.smart.com"
