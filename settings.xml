@@ -2,9 +2,9 @@
                               https://maven.apache.org/xsd/settings-1.0.0.xsd">
 	<mirrors>
 		<mirror>
-			<id>nexus</id>
+			<id>nexus-server</id>
 			<mirrorOf>*</mirrorOf>
-			<url>${nexus.repo.url.group}</url>
+			<url>${REGISTRY_GROUP}</url>
 		</mirror>
 	</mirrors>
 	
@@ -15,7 +15,7 @@
 				<activeByDefault>false</activeByDefault>
 			</activation>
 			<properties>
-				<release.repository.url>${nexus.repo.url.release}</release.repository.url>
+				<release.repository.url>${REGISTRY_RELEASE}</release.repository.url>
 			</properties>
 		</profile>
 		<profile>
@@ -24,7 +24,7 @@
 				<activeByDefault>false</activeByDefault>
 			</activation>
 			<properties>
-				<snapshot.repository.url>${nexus.repo.url.snapshot}</snapshot.repository.url>
+				<snapshot.repository.url>${REGISTRY_SNAPSHOOT}</snapshot.repository.url>
 			</properties>
 		</profile>
 	</profiles>
@@ -32,8 +32,8 @@
 	<servers>
 		<server>
 			<id>nexus-server</id>
-			<username>${nexus.username}</username>
-			<password>${nexus.password}</password>
+			<username>${REGISTRY_USERNAME}</username>
+			<password>${REGISTRY_PASSWORD}</password>
 		</server>
 	</servers>
 </settings>
