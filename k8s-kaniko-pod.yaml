@@ -6,13 +6,13 @@ spec:
   hostAliases:
   - ip: "192.168.0.200"
     hostnames:
-    - "jenkins.smart.com"
-    - "agent.jenkins.smart.com"
-    - "nexus.smart.com"
-    - "docker-s.nexus.smart.com"
-    - "docker-r.nexus.smart.com"
-    - "docker-p.nexus.smart.com"
-    - "docker-g.nexus.smart.com"
+    - "jenkins.s3t.co"
+    - "agent.jenkins.s3t.co"
+    - "nexus.s3t.co"
+    - "docker-s.nexus.s3t.co"
+    - "docker-r.nexus.s3t.co"
+    - "docker-p.nexus.s3t.co"
+    - "docker-g.nexus.s3t.co"
   containers:
   - name: kaniko
     image: gcr.io/kaniko-project/executor:debug

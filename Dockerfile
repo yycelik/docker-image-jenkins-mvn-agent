@@ -17,6 +17,9 @@ RUN ln -s /opt/maven/bin/mvn /usr/local/bin
 RUN rm -f /tmp/apache-maven-3.9.4-bin.tar.gz
 ENV MAVEN_HOME /opt/maven
 
+# Add custom settings.xml for Maven
+COPY settings.xml /opt/maven/conf/
+
 RUN chown -R jenkins:jenkins /opt/maven
 
 

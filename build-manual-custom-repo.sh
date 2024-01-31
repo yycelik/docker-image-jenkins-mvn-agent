@@ -1,4 +1,4 @@
-export REGISTRY_URL="docker-r.nexus.smart.com"
+export REGISTRY_URL="docker-r.nexus.s3t.co"
 export REGISTRY_USERNAME="xxx"
 export REGISTRY_PASSWORD="xxx"
 
