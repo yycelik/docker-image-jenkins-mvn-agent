@@ -25,7 +25,7 @@ spec:
   volumes:
     - name: kaniko-secret
       secret:
-        secretName: nexus-registry-cred
+        secretName: nexus-s3t-co-docker-config
         items:
           - key: .dockerconfigjson
             path: config.json
