@@ -11,3 +11,6 @@
 	image info
 	base image : jenkins/inbound-agent:latest
 	installed apps : mvn, openjdk17
+	
+	
+	create-jenkins-mvn-agent-secret.sh required on jenkins-mvn-agent. Setting.xml get parameters from that secret.
