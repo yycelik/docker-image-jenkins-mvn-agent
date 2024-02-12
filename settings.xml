@@ -4,7 +4,7 @@
 		<mirror>
 			<id>nexus-server</id>
 			<mirrorOf>*</mirrorOf>
-			<url>${REGISTRY_GROUP}</url>
+			<url>${env.MVN_REGISTRY_GROUP}</url>
 		</mirror>
 	</mirrors>
 	
@@ -15,7 +15,7 @@
 				<activeByDefault>false</activeByDefault>
 			</activation>
 			<properties>
-				<release.repository.url>${REGISTRY_RELEASE}</release.repository.url>
+				<release.repository.url>${env.MVN_REGISTRY_RELEASE}</release.repository.url>
 			</properties>
 		</profile>
 		<profile>
@@ -24,7 +24,7 @@
 				<activeByDefault>false</activeByDefault>
 			</activation>
 			<properties>
-				<snapshot.repository.url>${REGISTRY_SNAPSHOOT}</snapshot.repository.url>
+				<snapshot.repository.url>${env.MVN_REGISTRY_SNAPSHOOT}</snapshot.repository.url>
 			</properties>
 		</profile>
 	</profiles>
@@ -32,8 +32,8 @@
 	<servers>
 		<server>
 			<id>nexus-server</id>
-			<username>${REGISTRY_USERNAME}</username>
-			<password>${REGISTRY_PASSWORD}</password>
+			<username>${env.REGISTRY_USERNAME}</username>
+			<password>${env.REGISTRY_PASSWORD}</password>
 		</server>
 	</servers>
 </settings>
