@@ -1,1 +1,1 @@
-kubectl create secret generic regcred -n devops-tools --from-file=.dockerconfigjson=c:\temp\config.json --type=kubernetes.io/dockerconfigjson
+kubectl create secret generic nexus-registry-cred -n devops-tools --from-file=.dockerconfigjson=config.json --type=kubernetes.io/dockerconfigjson
